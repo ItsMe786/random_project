@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+#right {
+background-color: chartreuse;
+padding: 20px;
+display: flex;
+justify-content:flex-end;
+}
+
+#left {
+background-color: cyan;
+padding:20px;
+display:flex;
+justify-content:flex-start;
+}
+
+#center {
+background-color: crimson;
+display:flex;
+justify-content: center; 
+padding:20px;
+}
+#container {
+   border:3px solid black;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    width:400px;
+    flex-wrap:wrap;
+}
+
+.items {
+    border: 1px solid black;
+    padding:5px;
+    width:80px;
+}
+#three {
+    order:9;
+}
+
+#nine {
+    order:-2;
+}
+img {
+    width:70px;
+    height:70px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Read the text in each HTML element and do what it asks
+USE ONLY FLEXBOX - Use w3schools if you don't remember property names and their values -->
+<div id="right">Please align me to the right using CSS flexbox.</div>
+
+<div id="left">Please align me to the left using CSS flexbox.</div>
+
+<div id="center">Please center me perfectly in the middle of the page, vertically and horizontally.</div>
+
+
+<!--
+USE ONLY FLEXBOX - Use w3schools if you don't remember property names and their values
+1. Give the container a border
+2. Give the container some padding like 40px
+3. Center the container horizontally only.
+4. Give all the items a border
+5. Give all the items some padding like 5px
+6. Make your items wrap to the next line
+7. Change the order for item 9 to be in place of item 3, so 1, 2, 9, 3...
+8. Add images inside each item and make the width 70 and height 70.
+9. Make all the images you just added as clickable links to take you to other sites.
+10. Make sure your links open the website in another tab and not leave the current page you are on. (Hint: There's an attribute for the a element that helps you achieve this. Search on w3schools if you don't remember or know already)
+-->
+<div id="container">
+<div id="one" class="items" style="order: 1;">1 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/"> <img src="https://i.pinimg.com/originals/93/27/1b/93271becf703a96f5dfe161289a92c3b.jpg"></a>
+</div>
+<div id="two" class="items" style="order: 2;">2 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://s2982.pcdn.co/wp-content/uploads/2021/05/LOTR-Book-Nook-Gandalf.jpg.optimal.jpg"> </a></div>
+<div id="three" class="items" style="order: 9;">3 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://myobt.files.wordpress.com/2020/05/june.jpg?w=794"></a> </div>
+<div id="four" class="items" style="order: 4;">4 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://images.saymedia-content.com/.image/t_share/MTc2NzMxNTkxOTcwOTg5OTQ2/how-to-make-a-book-nook-bookshelf-insert.png"> </a></div>
+<div id="five" class="items" style="order: 5;" >5 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-02/10/21/asset/07d13375591d/sub-buzz-634-1581371873-2.jpg?output-quality=auto&output-format=auto&downsize=640:"></a></div>
+<div id="six" class="items" style="order: 6;">6 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://images.saymedia-content.com/.image/t_share/MTc2NzMxNTkxOTcwOTg5OTQ2/how-to-make-a-book-nook-bookshelf-insert.png"></a></div>
+<div id="seven" class="items" style="order: 7;">7 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://i.pinimg.com/736x/50/50/1b/50501b29d1a5d6a789336749d2592784.jpg" ></a></div>
+<div id="eight" class="items"style="order: 8;">8 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/21/asset/711e4e7aa55c/sub-buzz-6668-1585604436-8.jpg" ></a></div>
+<div id="nine" class="items" style="order: 3;">9 <a href="https://bookriot.com/diy-book-nook-shelf-inserts/" target="_blank"><img src="https://i.ytimg.com/vi/lloesAf3CV8/maxresdefault.jpg"></a></div>
+</div>
+
+</body>
+
+</html>
